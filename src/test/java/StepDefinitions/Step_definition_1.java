@@ -63,7 +63,7 @@ public void enter_details(String Country_name) throws InterruptedException
 	}
 	else
 	{
-		System.out.println("Date not enabled");
+		System.out.println("not enabled");
 	}
 	
 }
