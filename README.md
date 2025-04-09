@@ -1,2 +1,2 @@
 # ProjectOne
-A selenium project to practice git hub actions
+Automation of flight ticket booking app testing using Selenium-Java-TastNG frame work.
