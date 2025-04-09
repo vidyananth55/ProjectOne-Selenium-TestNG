@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="Tests.DataValidation">
+        <methods>
+          <include name="add_entries"/>
+          <include name="quit_browser"/>
+          <include name="Launch_website"/>
+          <include name="validate_country_name"/>
+        </methods>
+      </class> <!-- Tests.DataValidation -->
+      <class name="Tests.ErrorValidation">
+        <methods>
+          <include name="validate_country_name" invocation-numbers="0 0 1 1"/>
+          <include name="quit_browser"/>
+          <include name="Launch_website"/>
+        </methods>
+      </class> <!-- Tests.ErrorValidation -->
+      <class name="Tests.Regression">
+        <methods>
+          <include name="alert_handling"/>
+          <include name="quit_browser"/>
+          <include name="validate_date"/>
+          <include name="Launch_website"/>
+          <include name="switch_window"/>
+        </methods>
+      </class> <!-- Tests.Regression -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
