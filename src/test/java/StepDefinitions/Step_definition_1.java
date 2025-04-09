@@ -41,6 +41,7 @@ public void enter_details(String Country_name) throws InterruptedException
 	driver.findElement(By.cssSelector("input[type=\"text\"][id=\"autosuggest\"]")).sendKeys(Country_name);
 	String retrieved_value = driver.findElement(By.cssSelector("input[type=\"text\"][id=\"autosuggest\"]")).getAttribute("placeholder");
 	Country_name.equals(retrieved_value);
+	System.out.println(retrieved_value);
 	driver.findElement(By.xpath("//label[text()='Round Trip']")).click();
 	
 	

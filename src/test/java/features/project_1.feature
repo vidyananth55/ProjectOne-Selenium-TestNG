@@ -9,7 +9,7 @@ Then Handle alert
 
 
 
-
+@Regressiontest
 Scenario Outline: enter details, assert and switch window
 
 Given user is on website home page

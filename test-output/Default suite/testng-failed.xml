@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CucumberOptions.TestRunner">
+      <class name="Tests.Regression">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="quit_browser"/>
+          <include name="alert_handling"/>
+          <include name="Launch_website"/>
+          <include name="validate_date"/>
+          <include name="switch_window"/>
         </methods>
-      </class> <!-- CucumberOptions.TestRunner -->
+      </class> <!-- Tests.Regression -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
