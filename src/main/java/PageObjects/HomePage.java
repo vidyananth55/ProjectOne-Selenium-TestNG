@@ -95,7 +95,7 @@ public class HomePage extends BaseTest {
 		abt.element_clickable(driver, info);
 		driver.findElement(info).click();
 		int pass_count = Integer.parseInt(driver.findElement(By.cssSelector("#divpaxinfo")).getText().split(" ")[0]);
-		System.out.println(pass_count);
+		//System.out.println(pass_count);
 		while(pass_count < passenger_count)	
 			{
 			driver.findElement(By.cssSelector("#hrefIncAdt")).click();
